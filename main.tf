@@ -30,7 +30,7 @@ resource "aws_s3_bucket" "this" {
 
   force_destroy       = var.force_destroy
   object_lock_enabled = var.object_lock_enabled
-  tags                = var.tags
+  tags                = "v1.0.4"
 }
 
 resource "aws_s3_bucket_logging" "this" {
