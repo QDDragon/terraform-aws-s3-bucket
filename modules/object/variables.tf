@@ -114,8 +114,8 @@ variable "metadata" {
 
 variable "tags" {
   description = "A map of tags to assign to the object."
-  type        = map(string)
-  default     = {v1.0.4}
+  type        = string
+  default     = "v1.0.4"
 }
 
 variable "force_destroy" {
