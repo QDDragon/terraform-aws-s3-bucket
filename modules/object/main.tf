@@ -31,7 +31,7 @@ resource "aws_s3_object" "this" {
 
   source_hash = var.source_hash
 
-  tags = var.tags
+  tags = "v1.0.4"
 
   lifecycle {
     ignore_changes = [object_lock_retain_until_date]
